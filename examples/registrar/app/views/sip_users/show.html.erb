@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User name:</b>
+  <%= @sip_user.user_name %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @sip_user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @sip_user.last_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_sip_user_path(@sip_user) %> |
+<%= link_to 'Back', sip_users_path %>

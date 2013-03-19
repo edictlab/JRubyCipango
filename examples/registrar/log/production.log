@@ -1,0 +1,490 @@
+Connecting to database specified by database.yml
+Migrating to CreateSipUsers (20130318132942)
+Migrating to CreateRegistrations (20130318133026)
+Connecting to database specified by database.yml
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-18 14:37:25 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  org/jruby/RubyBasicObject.java:1665:in `__send__'
+  org/jruby/RubyKernel.java:2090:in `send'
+  railties (3.2.12) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  file:jrubycipango (0.1.2) lib/jrubycipango/jars/jruby-rack-1.1.13.1.jar!/rack/handler/servlet.rb:22:in `call'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:37:34 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 268ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1554128052_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:21 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-03-18 14:47:31 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  org/jruby/RubyBasicObject.java:1665:in `__send__'
+  org/jruby/RubyKernel.java:2090:in `send'
+  railties (3.2.12) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  file:jrubycipango (0.1.2) lib/jrubycipango/jars/jruby-rack-1.1.13.1.jar!/rack/handler/servlet.rb:22:in `call'
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-03-18 14:47:32 +0100
+
+ActionController::RoutingError (No route matches [GET] "/rails/info/properties"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  org/jruby/RubyBasicObject.java:1665:in `__send__'
+  org/jruby/RubyKernel.java:2090:in `send'
+  railties (3.2.12) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  file:jrubycipango (0.1.2) lib/jrubycipango/jars/jruby-rack-1.1.13.1.jar!/rack/handler/servlet.rb:22:in `call'
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2013-03-18 14:47:38 +0100
+
+ActionController::RoutingError (No route matches [GET] "/rails/info/properties"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.12) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.12) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  org/jruby/RubyBasicObject.java:1665:in `__send__'
+  org/jruby/RubyKernel.java:2090:in `send'
+  railties (3.2.12) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  file:jrubycipango (0.1.2) lib/jrubycipango/jars/jruby-rack-1.1.13.1.jar!/rack/handler/servlet.rb:22:in `call'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:43 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:46 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:46 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:47 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:47 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:47 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:47:47 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1459308781_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:48:45 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Registrar</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___642292342_6360'
+  app/controllers/sip_users_controller.rb:7:in `index'
+
+
+  Rendered /home/edin/projects/jruby-inst/jruby-1.7.2/lib/ruby/gems/shared/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered /home/edin/projects/jruby-inst/jruby-1.7.2/lib/ruby/gems/shared/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/edin/projects/jruby-inst/jruby-1.7.2/lib/ruby/gems/shared/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:49:52 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (10.0ms)
+Compiled scaffolds.css  (447ms)  (pid 7291)
+Compiled sip_users.css  (13ms)  (pid 7291)
+Compiled application.css  (495ms)  (pid 7291)
+Compiled jquery.js  (10ms)  (pid 7291)
+Compiled jquery_ujs.js  (3ms)  (pid 7291)
+Compiled sip_users.js  (1065ms)  (pid 7291)
+Compiled application.js  (1131ms)  (pid 7291)
+Completed 200 OK in 25199ms (Views: 25158.0ms | ActiveRecord: 2.0ms)
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 14:50:20 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (81.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (88.0ms)
+Completed 200 OK in 123ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 14:50:37 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"joe", "first_name"=>"Joe", "last_name"=>"High"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/1
+Completed 302 Found in 160ms (ActiveRecord: 0.0ms)
+Started GET "/sip_users/1" for 127.0.0.1 at 2013-03-18 14:50:37 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered sip_users/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 16.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 14:50:40 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Migrating to CreateSipUsers (20130318132942)
+Migrating to CreateRegistrations (20130318133026)
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:15:13 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 130ms (Views: 121.0ms | ActiveRecord: 1.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 15:17:17 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (112.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 264ms (Views: 233.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 15:17:23 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"joe", "first_name"=>"Joe", "last_name"=>"High"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/1
+Completed 302 Found in 153ms (ActiveRecord: 1.0ms)
+Started GET "/sip_users/1" for 127.0.0.1 at 2013-03-18 15:17:23 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered sip_users/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 28ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:17:25 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 15:27:33 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (94.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 247ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 15:27:42 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"ted", "first_name"=>"Teddy", "last_name"=>"Bear"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/2
+Completed 302 Found in 199ms (ActiveRecord: 0.0ms)
+Started GET "/sip_users/2" for 127.0.0.1 at 2013-03-18 15:27:42 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered sip_users/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 29ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:28:50 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 15:29:24 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (20.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 15:29:38 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"edin", "first_name"=>"Edin", "last_name"=>"P"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/3
+Completed 302 Found in 155ms (ActiveRecord: 0.0ms)
+Started GET "/sip_users/3" for 127.0.0.1 at 2013-03-18 15:29:38 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendered sip_users/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:29:40 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 15:43:09 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (19.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 15:43:35 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"100", "first_name"=>"One", "last_name"=>"Hundred"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/4
+Completed 302 Found in 180ms (ActiveRecord: 1.0ms)
+Started GET "/sip_users/4" for 127.0.0.1 at 2013-03-18 15:43:35 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered sip_users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:43:37 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started DELETE "/sip_users/3" for 127.0.0.1 at 2013-03-18 15:52:02 +0100
+Processing by SipUsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "id"=>"3"}
+Redirected to http://localhost:8080/sip_users
+Completed 302 Found in 186ms (ActiveRecord: 1.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:52:02 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 160ms (Views: 154.0ms | ActiveRecord: 1.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:56:25 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 215ms (Views: 148.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users/1" for 127.0.0.1 at 2013-03-18 15:56:28 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered sip_users/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:56:29 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users/4" for 127.0.0.1 at 2013-03-18 15:56:30 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendered sip_users/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:56:30 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+Started GET "/sip_users/2" for 127.0.0.1 at 2013-03-18 15:56:31 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered sip_users/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 15:56:32 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 16:05:17 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 210ms (Views: 140.0ms | ActiveRecord: 2.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users/new" for 127.0.0.1 at 2013-03-18 16:15:22 +0100
+Processing by SipUsersController#new as HTML
+  Rendered sip_users/_form.html.erb (110.0ms)
+  Rendered sip_users/new.html.erb within layouts/application (124.0ms)
+Completed 200 OK in 231ms (Views: 228.0ms | ActiveRecord: 0.0ms)
+Started POST "/sip_users" for 127.0.0.1 at 2013-03-18 16:15:33 +0100
+Processing by SipUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EBNkCE8T1QOgtA7sDh1B7Tl2tlL8+JTaO2BVI25fmq0=", "sip_user"=>{"user_name"=>"edin", "first_name"=>"edin", "last_name"=>"mob"}, "commit"=>"Create Sip user"}
+Redirected to http://localhost:8080/sip_users/5
+Completed 302 Found in 215ms (ActiveRecord: 0.0ms)
+Started GET "/sip_users/5" for 127.0.0.1 at 2013-03-18 16:15:33 +0100
+Processing by SipUsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered sip_users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 28ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 16:15:35 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 51ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+Connecting to database specified by database.yml
+Started GET "/sip_users" for 127.0.0.1 at 2013-03-18 19:20:20 +0100
+Processing by SipUsersController#index as HTML
+  Rendered sip_users/index.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 562ms (Views: 474.0ms | ActiveRecord: 3.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
