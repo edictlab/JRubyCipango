@@ -16,7 +16,10 @@ This gem is a wrapper for Java based Cipango SIP/HTTP Servlet Application Server
 
 This wrapper is implemented in `JRubyCipango::CipangoServer` Ruby class.
 
+
 You can read about concepts behind this gem in our papers. PDF files are available at [this location](http://scholar.google.com/citations?user=7RoQiiQAAAAJ).
+
+We highly recomend you to see also [`sipfsm`](http://github.com/edictlab/SipFSM) gem in order to simplify the description of the SIP call flows inside the application. 
 
 ### Setting up and starting the server
 
