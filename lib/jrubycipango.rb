@@ -78,9 +78,9 @@ module JRubyCipango
     # :options => {:is_event_listener => false} 
     # if :is_event_listener is true the servlet must include javax.servlet.sip.SipSessionListener or other Java Sip listener interface 
     def add_sip_servlet sip_servlet, options={}
-      options[:options] ||= {}
-      options[:options][:is_event_listener] ||= false
-      @sip_servlets << {:servlet => sip_servlet, :options => options[:options]} if sip_servlet
+      options[:is_event_listener] ||= false
+      options[:servlet_name] ||= nil
+      @sip_servlets << {:servlet => sip_servlet, :options => options} if sip_servlet
     end
 
     # Start the Cipango server
@@ -125,7 +125,7 @@ module JRubyCipango
       @http_servlets.each do |servlet|
         #servlet_holder = ServletHolder.new(servlet[:servlet_name], servlet[:app] )
         servlet_holder = ServletHolder.new(servlet[:app] )
-        servlet_holder.name = servlet[:servlet_name]
+        servlet_holder.name = servlet[:servlet_name] if servlet[:servlet_name]
         params = servlet[:init_params]
         params.each{|k, v| servlet_holder.set_init_parameter(k, v) }
         # puts "Context path: " + servlet[:context_path]
@@ -137,8 +137,10 @@ module JRubyCipango
  #     context.add_event_listener( Factory::RackServletContextListener.new )
 
       @sip_servlets.each do |servlet_data|
-        puts "servlet data #{servlet_data[:options]}"
-        context.add_sip_servlet(SipServletHolder.new(servlet_data[:servlet]))
+        #puts "servlet data #{servlet_data[:options]}"
+        servlet_holder = SipServletHolder.new(servlet_data[:servlet])
+        servlet_holder.name = servlet_data[:options][:servlet_name] if servlet_data[:options][:servlet_name]
+        context.add_sip_servlet(servlet_holder)
         context.add_event_listener(servlet_data[:servlet]) if servlet_data[:options][:is_event_listener]
       end
 

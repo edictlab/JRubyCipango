@@ -72,8 +72,9 @@ where `rackup_options` is an optional Hash with the following keys:
 where:
 
 - `sip_sevlet` is an instance of a SIP servlet class, which can be a Ruby SIP sevlet class and
-- `options` is a Hash with options. Options is given in form `:options => {option_key1 => option_value1, option_key2 => option_value2, ...}`. 
-Currently, only option `:is_event_listener` is supported with possible values `true` or `false` (default). In order for Ruby SIP servlet to be event listener it must implement appropriate Java interface.
+- `options` is a Hash with options:
+  - `:is_event_listener` tells whether the servlet is configured to be an event listener. Supported with possible values `true` or `false` (default). In order for Ruby SIP servlet to be event listener it must implement appropriate Java interface.
+  - `:servlet_name` is the SIP servlet's name.
 
 ### Example
 
