@@ -2,8 +2,8 @@
   
 Gem::Specification.new do |s|
   s.name        = 'jrubycipango'
-  s.version     = '0.1.2'
-  s.date        = '2013-02-15'
+  s.version     = '0.2.0'
+  s.date        = '2013-04-16'
   s.summary     = "JRubyCipango - embedded Cipango HTTP/SIP server"
   s.description = "Create SIP/HTTP applications using embedded Cipago server."
   s.authors     = ["Amer Hasanovic", "Edin Pjanic"] 

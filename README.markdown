@@ -46,13 +46,15 @@ There are three instance methods of `CipangoServer` class for adding HTTP and SI
 For understanding SIP and HTTP servlets please see [cipango.org](http://cipango.org), [Wikipedia article](http://en.wikipedia.org/wiki/Java_Servlet) or other.
 
 #### Adding a standard HTTP servlet:
-    myserver.add_http_servlet http_app, init_params, context_path
+    myserver.add_http_servlet http_app, params
 
 where:
 
 - `http_app` is a HTTP servlet instance, 
-- `init_params` are the servlet's initialization parameters given as a Ruby Hash (optional) and 
-- `context_path` is a servlet context path (default value is `'/*'`).
+- `params` is a parameters hash with the following keys:
+  - `:servlet_name` is a servlet's name,
+  - `:context_path` is a servlet context path (default value is `'/*'`) and
+  - `:init_params` are the servlet's initialization parameters given as a Ruby Hash (optional).
 
 #### Adding a JRuby Rack application
 

@@ -53,11 +53,12 @@ module JRubyCipango
     end
 
     # Add http servlet
-    def add_http_servlet http_app, init_params={}, context_path= '/*'
+    def add_http_servlet http_app, params = {}
       @http_servlets << {
         :app => http_app, 
-        :init_params => init_params, 
-        :context_path => context_path
+        :init_params => params[:init_params] || {}, 
+        :context_path => params[:context_path] || '/*',
+        :servlet_name => params[:servlet_name] || nil
       } if http_app  
     end
 
@@ -122,7 +123,9 @@ module JRubyCipango
       end
 
       @http_servlets.each do |servlet|
-        servlet_holder = ServletHolder.new(servlet[:app])
+        #servlet_holder = ServletHolder.new(servlet[:servlet_name], servlet[:app] )
+        servlet_holder = ServletHolder.new(servlet[:app] )
+        servlet_holder.name = servlet[:servlet_name]
         params = servlet[:init_params]
         params.each{|k, v| servlet_holder.set_init_parameter(k, v) }
         # puts "Context path: " + servlet[:context_path]
