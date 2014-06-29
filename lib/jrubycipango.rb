@@ -6,6 +6,8 @@ require 'java'
 # --- Cipango/Jetty and JRuby Rack jars -----
 dir = File.dirname(File.expand_path(__FILE__)) 
 Dir[dir + "/jrubycipango/jars/*.jar"].each { |jar| require jar }
+Dir[dir + "/jrubycipango/jars/sip/*.jar"].each { |jar| require jar }
+Dir[dir + "/jrubycipango/jars/jetty/*.jar"].each { |jar| require jar }
 
 require 'jrubycipango/factory'
 

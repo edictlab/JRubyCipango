@@ -2,8 +2,8 @@
   
 Gem::Specification.new do |s|
   s.name        = 'jrubycipango'
-  s.version     = '0.2.0'
-  s.date        = '2013-04-16'
+  s.version     = '0.2.1'
+  s.date        = '2013-04-29'
   s.summary     = "JRubyCipango - embedded Cipango HTTP/SIP server"
   s.description = "Create SIP/HTTP applications using embedded Cipago server."
   s.authors     = ["Amer Hasanovic", "Edin Pjanic"] 
@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
                     "lib/jrubycipango/factory.rb"]
 
   Dir["lib/jrubycipango/jars/*.jar"].each { |jar| s.files << jar }
+  Dir["lib/jrubycipango/jars/sip/*.jar"].each { |jar| s.files << jar }
+  Dir["lib/jrubycipango/jars/jetty/*.jar"].each { |jar| s.files << jar }
   s.require_paths      = ["lib"] 
   s.homepage    = 'http://ictlab.com.ba'
 end
