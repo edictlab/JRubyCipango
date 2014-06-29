@@ -105,7 +105,7 @@ module JRubyCipango
       context = SipAppContext.new
       context.context_path = @context_path
       context.resource_base = @resource_base 
-      $servlet_context = context.servlet_context
+      $sip_servlet_context = context.servlet_context
 
       context.set_init_parameter('jruby.max.runtimes', '1')
       #context.set_init_parameter('org.eclipse.jetty.servlet.Default.resourceCache', '0')
