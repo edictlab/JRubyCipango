@@ -1,4 +1,3 @@
-[![Gem Version](https://badge.fury.io/rb/jrubycipango.png)](http://badge.fury.io/rb/jrubycipango)
 # JRubyCipango
 
 Embedding Cipango HTTP/SIP application server into a JRuby application
@@ -8,6 +7,7 @@ Embedding Cipango HTTP/SIP application server into a JRuby application
 Install `jrubycipango` gem as any other JRuby gem:
 
       $ jruby -S gem install jrubycipango
+[![Gem Version](https://badge.fury.io/rb/jrubycipango.png)](http://badge.fury.io/rb/jrubycipango)
 
 ## Features and usage
 
