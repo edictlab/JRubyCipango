@@ -1,4 +1,3 @@
-
 # Rails: ne zaboraviti u config/environments/production.rb postaviti config.assets.compile=true
 module JRubyCipango
   module Factory
