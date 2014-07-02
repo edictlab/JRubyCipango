@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/jrubycipango.png)](http://badge.fury.io/rb/jrubycipango)
 # JRubyCipango
 
 Embedding Cipango HTTP/SIP application server into a JRuby application
