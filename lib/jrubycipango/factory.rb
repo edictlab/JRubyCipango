@@ -1,5 +1,5 @@
 
-# ne zaboraviti u config/production.rb postaviti config.precompiled_assets ili tako nesto na true
+# Rails: ne zaboraviti u config/environments/production.rb postaviti config.assets.compile=true
 module JRubyCipango
   module Factory
     ['org.jruby.rack.DefaultRackApplicationFactory',
