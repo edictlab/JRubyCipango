@@ -40,6 +40,7 @@ This constructor receives an optional Hash parameter with the following keys:
 - `:sip_port` - IP port for lintening to SIP traffic, default value is `5060`,
 - `:context_path` - HTTP application context path, default value is `'/'` and
 - `:resource_base` - root for the resurce base, default value is `'.'`.
+- `:route_outgoing_requests` - configure the DAR to process outgoing SIP requests, default value is `false`.
 
 There are three instance methods of `CipangoServer` class for adding HTTP and SIP servlets to the server instance. All types of servlets can be implemented in Ruby language.
 
